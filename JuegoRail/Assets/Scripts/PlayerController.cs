@@ -18,9 +18,18 @@ public class PlayerController : MonoBehaviour
     {
         transform.Translate(Vector3.forward * Time.deltaTime * Input.GetAxis("Vertical") * xySpeed);
         transform.Translate(Vector3.right * Time.deltaTime * Input.GetAxis("Horizontal") * xySpeed);
+        
 
-       
+        ClampPosition();
+    }
 
+    void ClampPosition()
+    {
+        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+        pos.x = Mathf.Clamp01(pos.x);
+        pos.y = Mathf.Clamp01(pos.y);
+        
+        transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
 
 }
