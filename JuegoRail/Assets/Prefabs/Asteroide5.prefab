@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8998920067043020130}
   - component: {fileID: 5426078381692469959}
   - component: {fileID: 7829994777233077773}
-  - component: {fileID: 4961727219131466043}
+  - component: {fileID: 3771218515463091755}
+  - component: {fileID: -4562089113301339700}
   m_Layer: 0
   m_Name: Asteroide5
   m_TagString: Enemy
@@ -84,8 +85,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4961727219131466043
-MeshCollider:
+--- !u!65 &3771218515463091755
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,7 +103,19 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3181877126549133397, guid: 730b2e4b190a32846bc56dce6a55d1d6, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.0069999993, y: 0.007699998, z: 0.0069999993}
+  m_Center: {x: 0.000019854517, y: 0.00023369395, z: -0.0003500945}
+--- !u!114 &-4562089113301339700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8622500700427622360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbd1abdacc79ad341b4cadac834a93cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 5
