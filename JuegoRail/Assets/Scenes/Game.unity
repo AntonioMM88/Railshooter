@@ -699,10 +699,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2074719656}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1531203259}
     - target: {fileID: 2492918953605556214, guid: 0c463b17fcbd190499bdce861f3b1c4d, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -2689,11 +2685,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6042781981244049488, guid: c5596269ed4b9b04390b8e686af42be9, type: 3}
   m_PrefabInstance: {fileID: 1466432692}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1531203259 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5261236568451661215, guid: 1eb80a569da13544aa7aa006b0a0a31d, type: 3}
-  m_PrefabInstance: {fileID: 1735274447062051134}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1594715352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,7 +2746,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 385043101211738193, guid: b3f260954b0e8134d9aee6989f0fee62, type: 3}
   bulletSpeed: 200
-  buletDamage: 0
   bulletFireRate: 2.23
   myLayerMask:
     serializedVersion: 2

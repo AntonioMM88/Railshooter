@@ -6,7 +6,7 @@ public class PlayerShoots : MonoBehaviour
 {
     private Ray ray;
     public GameObject bullet;
-    public float bulletSpeed, buletDamage, bulletFireRate;
+    public float bulletSpeed, bulletFireRate;
     private Vector3 hitpoint;
     public LayerMask myLayerMask;
 

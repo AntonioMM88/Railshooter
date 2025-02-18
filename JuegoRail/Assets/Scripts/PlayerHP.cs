@@ -19,7 +19,11 @@ public class PlayerHP : MonoBehaviour
 
         if(HP <= 0)
         {
-            SceneManager.LoadScene("Menu");
+            
+            Cursor.visible = true;
+            Time.timeScale = 0;
+            Destroy(this.gameObject);
+            
         }
         
     }

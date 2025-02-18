@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         pos.x = Mathf.Clamp01(pos.x);
         pos.y = Mathf.Clamp01(pos.y);
+        pos.z = 12f;
         
         transform.position = Camera.main.ViewportToWorldPoint(pos);
     }
