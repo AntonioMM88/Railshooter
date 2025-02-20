@@ -32,6 +32,7 @@ public class PlayerHP : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             HP -= 20;
+
         }
 
         if (collision.gameObject.tag == "HP")
