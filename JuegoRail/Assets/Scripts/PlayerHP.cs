@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
-    public int HP = 100;
-    public int MaxHP = 100;
+    public int HP = 500;
+    public int MaxHP = 1000;
+    
 
     // Update is called once per frame
     void Update()
@@ -19,11 +20,13 @@ public class PlayerHP : MonoBehaviour
 
         if(HP <= 0)
         {
-            
-            Cursor.visible = true;
-            Time.timeScale = 0;
             Destroy(this.gameObject);
             
+                SceneManager.LoadScene("Menu");
+            
+
+
+
         }
         
     }
@@ -31,13 +34,13 @@ public class PlayerHP : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            HP -= 20;
+            HP -= 70;
 
         }
 
         if (collision.gameObject.tag == "HP")
         {
-            HP += 20;
+            HP += 100;
         }
     }
     
